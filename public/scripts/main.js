@@ -11,7 +11,7 @@ const modalButton = document.querySelector('.modal button')
 const checkButtons = document.querySelectorAll(".actions a.check") 
 
 checkButtons.forEach(button => {
-    //adicionar a escuta
+    // Adicionar a escuta
     button.addEventListener("click", handleClick)
 })
 
@@ -37,6 +37,6 @@ function handleClick(event, check = true) {
     modalButton.innerHTML= `Sim, ${text.toLowerCase()}`
     check ? modalButton.classList.remove("red") : modalButton.classList.add("red")
     
-    //abrir modal
+    // Abrir modal
     modal.open()
 }
